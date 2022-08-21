@@ -46,6 +46,7 @@ main{
   display: flex;
   justify-content: space-between;
   gap: 100px;
+  margin-bottom: 80px;
 }
 h1,
 ul {
