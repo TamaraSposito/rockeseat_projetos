@@ -201,6 +201,8 @@ main {
     .page {
         max-width: 117rem;
         padding: 0 0;
+        display:grid;
+        grid-template-columns: 377px 1fr;
 
     }
 
@@ -211,9 +213,6 @@ main {
     }
 
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
         height: 100%;
         width: 377px;
 
@@ -256,39 +255,44 @@ main {
         "A B C"
         "D B F"
         "D E F";
-        padding: 6.4rem 5rem 1rem 475px;
+        padding: 1rem;
     }
-    .card img:nth-child(1) {
+    .card{
+        padding: 0;
+        margin: 0;
+    }
+
+    .card:nth-child(1) {
         grid-area: A;
     }
 
-    .card img:nth-child(2) {
+    .card:nth-child(2) {
         grid-area: B;
     }
 
-    .card img:nth-child(3) {
+    .card:nth-child(3) {
         grid-area: C;
     }
 
-    .card img:nth-child(4) {
+    .card:nth-child(4) {
         grid-area: D;
     }
 
-    .card img:nth-child(5) {
+    .card:nth-child(5) {
         grid-area: E;
     }
 
-    .card img:nth-child(6) {
+    .card:nth-child(6) {
         grid-area: F;
     }
 
     .card-impar {
-        height: 350px;
+        /* height: 350px; */
         width: 100%;
     }
 
     .card-par {
-        height: 150px;
+        /* height: 150px; */
         width: 100%;
     }
 
